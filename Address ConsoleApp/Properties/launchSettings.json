@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Address.ConsoleApp": {
+      "commandName": "Project"
+    }
+  }
+}
