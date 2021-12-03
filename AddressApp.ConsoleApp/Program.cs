@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Address.ConsoleApp
+namespace AddressApp.ConsoleApp
 {
     class Program
     {
