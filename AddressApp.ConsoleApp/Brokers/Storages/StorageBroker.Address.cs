@@ -9,16 +9,14 @@ namespace AddressApp.ConsoleApp.Brokers.Storages
 {
     partial class StorageBroker : IStorageBroker
     {
-        List<Address> Addresses = new List<Address>();
-        public Address InsertAddress(Address Address)
-        {
+       List<Address> Addresses = new List<Address>();
 
-            Addresses.Add(Address);
+       public Address InsertAddress(Address Address)
+        {
+           Addresses.Add(Address);
 
             return Address;
-
         }
-
     }
 }
 
