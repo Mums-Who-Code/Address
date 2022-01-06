@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressApp.ConsoleApp", "AddressApp.ConsoleApp\AddressApp.ConsoleApp.csproj", "{D574E5CB-C9D6-4CC2-9713-B506BCD4E9CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressApp.Tests.Unit", "AddressApp.Tests.Unit\AddressApp.Tests.Unit.csproj", "{AB306AF1-2402-40A3-B97F-72BCD80BE2BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{D574E5CB-C9D6-4CC2-9713-B506BCD4E9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D574E5CB-C9D6-4CC2-9713-B506BCD4E9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D574E5CB-C9D6-4CC2-9713-B506BCD4E9CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB306AF1-2402-40A3-B97F-72BCD80BE2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB306AF1-2402-40A3-B97F-72BCD80BE2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB306AF1-2402-40A3-B97F-72BCD80BE2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB306AF1-2402-40A3-B97F-72BCD80BE2BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
