@@ -4,7 +4,7 @@
 
 namespace AddressApp.ConsoleApp.Brokers.Storages
 {
-    partial interface IStorageBroker
+    public partial interface IStorageBroker
     {
     }
 }

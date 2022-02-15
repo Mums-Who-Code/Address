@@ -7,7 +7,7 @@ using AddressApp.ConsoleApp.Models.Address;
 
 namespace AddressApp.ConsoleApp.Brokers.Storages
 {
-    partial class StorageBroker : IStorageBroker
+    public partial class StorageBroker : IStorageBroker
     {
        List<Address> Addresses = new List<Address>();
 
