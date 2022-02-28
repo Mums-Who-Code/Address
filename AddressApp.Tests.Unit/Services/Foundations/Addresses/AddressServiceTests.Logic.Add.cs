@@ -4,28 +4,24 @@
 
 using AddressApp.ConsoleApp.Models.Address;
 using FluentAssertions;
+using Force.DeepCloner;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace AddressApp.Tests.Unit.Services.Foundations.Addresses
 {
     public partial class AddressServiceTests
     {
-        private readonly Address persistedAddress;
+
 
         [Fact]
-        public void ShouldAddAddress ()
+        public void ShouldAddAddress()
         {
             //given
             Address randomAddress = CreateRandomAddress();
             Address inputAddress = randomAddress;
-            Address expectAddress = inputAddress;
-            Address expectedAddress = persistedAddress;
+            Address persistedAddress = inputAddress;
+            Address expectedAddress = persistedAddress.DeepClone();
 
             this.storageBrokerMock.Setup(broker =>
                   broker.InsertAddress(inputAddress))
@@ -42,6 +38,6 @@ namespace AddressApp.Tests.Unit.Services.Foundations.Addresses
                       Times.Once);
 
             this.storageBrokerMock.VerifyNoOtherCalls();
-        }                                 
+        }
     }
 }

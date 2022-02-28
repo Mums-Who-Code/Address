@@ -1,4 +1,4 @@
-﻿    // ------------------------------------------------
+﻿// ------------------------------------------------
 // Copyright (c) MumsWhoCode. All rights reserved.
 // ------------------------------------------------
 
@@ -6,11 +6,6 @@ using AddressApp.ConsoleApp.Brokers.Storages;
 using AddressApp.ConsoleApp.Models.Address;
 using AddressApp.ConsoleApp.Services.Foundations.Addresses;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tynamix.ObjectFiller;
 
 namespace AddressApp.Tests.Unit.Services.Foundations.Addresses
@@ -29,7 +24,7 @@ namespace AddressApp.Tests.Unit.Services.Foundations.Addresses
 
         private static Address CreateRandomAddress() =>
                 CreateAddressFiller().Create();
-        
+
         private static Filler<Address> CreateAddressFiller() =>
           new Filler<Address>();
     }
