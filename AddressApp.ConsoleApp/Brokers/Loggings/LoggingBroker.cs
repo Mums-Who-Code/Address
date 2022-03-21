@@ -7,7 +7,7 @@ using System;
 
 namespace AddressApp.ConsoleApp.Brokers.Loggings
 {
-    internal class LoggingBroker : ILoggingBroker
+    public class LoggingBroker : ILoggingBroker
     {
         public ILogger logger { get; set; }
         public LoggingBroker(ILogger<LoggingBroker> logger)
@@ -15,7 +15,6 @@ namespace AddressApp.ConsoleApp.Brokers.Loggings
             this.logger = logger;
         }
         public void LogError(Exception exception) =>
-            this.logger.LogError(exception, exception.Message);
-
+        this.logger.LogError(exception, exception.Message);
     }
 }
